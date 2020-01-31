@@ -16,6 +16,7 @@ export default {
     outLogin () {
       window.sessionStorage.removeItem('token')
       this.$router.push('/login')
+      console.log(this)
     }
   }
 }
