@@ -1,0 +1,12 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"name": "test-vue @ 23091d5",
+		"uri": "gitlens://23091d5/e:/web/vue/test-vue?{\"path\":\"/e:/web/vue/test-vue\",\"ref\":\"23091d5487aacb9150b3c7345ef6c37225bbc73a\",\"repoPath\":\"e:/web/vue/test-vue\"}"
+	}
+],
+  "settings": {}
+}
