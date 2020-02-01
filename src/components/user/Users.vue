@@ -1,4 +1,12 @@
-/* eslint-disable vue/no-unused-vars */
+<!--
+ * @Author:
+ * @Date: 2020-02-01 21:21:07
+ * @LastEditors: Ly
+ * @LastEditTime: 2020-02-02 00:40:50
+ * @FilePath: \test-vue\src\components\user\Users.vue
+ * @Description:
+ -->
+
 <template>
   <div>
     <el-breadcrumb separator-class="el-icon-arrow-right">
@@ -57,6 +65,7 @@
           prop="role_name"
           label="角色"
         />
+
         <el-table-column label="状态">
           <template slot-scope="scope">
             <el-switch
@@ -152,6 +161,11 @@ export default {
       this.queryInfo.pagenum = newPage
       this.getUserList()
     },
+    /**
+     * @description: 根据id修改用户状态
+     * @param {type} userinfo.id
+     * @return:
+     */
     async userStateChange (userinfo) {
       const { data: res } = await this.$http.put(
         `users/${userinfo.id}/state/${userinfo.mg_state}`

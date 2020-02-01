@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2020-01-30 23:59:09
+ * @LastEditTime : 2020-02-02 00:08:56
+ * @LastEditors  : Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \test-vue\src\plugins\element.js
+ */
 import Vue from 'vue'
 import Button, {
   Form,

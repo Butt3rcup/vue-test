@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2020-01-30 23:58:06
+ * @LastEditTime: 2020-02-02 00:10:31
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: \test-vue\src\main.js
+ */
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'

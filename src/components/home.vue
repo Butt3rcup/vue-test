@@ -1,10 +1,11 @@
+
 <template>
   <el-container class="home-content">
     <el-header>
       <div>
         <img
           src="../assets/logo.png"
-          alt="log"
+          alt="logo"
         >
       </div>
       <el-button @click="outLogin">
