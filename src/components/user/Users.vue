@@ -2,7 +2,7 @@
  * @Author:
  * @Date: 2020-02-01 21:21:07
  * @LastEditors  : Ly
- * @LastEditTime : 2020-02-03 00:23:15
+ * @LastEditTime : 2020-02-03 03:21:23
  * @FilePath: \test-vue\src\components\user\Users.vue
  * @Description:
  -->
@@ -439,7 +439,11 @@ export default {
 
       this.$message.success('删除用户成功！')
       this.getUserList()
+    },
+    setRole (id) {
+
     }
+
   }
 }
 </script>
