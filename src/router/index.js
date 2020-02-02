@@ -1,10 +1,18 @@
+/*
+ * @Author:
+ * @Date: 2020-01-30 23:58:06
+ * @LastEditors  : Ly
+ * @LastEditTime : 2020-02-02 04:42:50
+ * @FilePath: \test-vue\src\router\index.js
+ * @Description:
+ */
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Login from '../components/Login.vue'
-import Home from '../components/home'
+// import Login from '../components/Login'
+import Home from '../components/Home'
 import Welcome from '../components/Welcome'
 import Users from '../components/user/Users'
-
+const Login = () => import('../components/Login')
 Vue.use(VueRouter)
 
 const routes = [
@@ -12,17 +20,18 @@ const routes = [
 
   {
     path: '/login',
+
     component: Login
   },
   {
     path: '/home',
-    component: Home,
+    component: resolve => require(['@/components/Home'], resolve),
     redirect: '/welcome',
     children: [
-      { path: '/welcome', component: Welcome },
+      { path: '/welcome', component: resolve => require(['@/components/Welcome'], resolve) },
       {
         path: '/users',
-        component: Users
+        component: resolve => require(['@/components/user/Users'], resolve)
       }
     ]
   }
